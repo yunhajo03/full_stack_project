@@ -1,0 +1,125 @@
+/*
+ * Author: Yunha Jo
+ * CS 132 Spring 2023
+ * Date: May 25, 2023
+ * This is the style.css page for the index.html page for final project. 
+ */
+
+body, h1, main, #header-bar, #header-bar > form, #product-view, 
+#product-view > figure, #buttons-bar,#reviews-area, #submit-review, 
+#reviews-submitted  {
+    display: flex;
+}
+
+#header-bar, main, #header-bar > form, #buttons-bar {
+    flex-direction: row;
+}
+
+body, #product-view, #reviews-area, #submit-review, #reviews-submitted {
+    flex-direction: column;
+}
+
+body, h1, ul {
+    margin: 0;
+}
+
+#header-bar, ::placeholder {
+    font-family: 'Manrope', sans-serif;
+}
+
+#banner > h1, div p, #product-details h2, #product-details h4 {
+    font-family: 'Fira Sans Condensed', sans-serif;
+} 
+
+#product-details h3, div > a, #submit-review {
+    font-family: 'Wix Madefor Display', sans-serif;
+}
+
+#header-bar, #buttons-bar {
+    justify-content: space-between;
+}
+
+#header-bar > form {
+    align-items: center;
+}
+
+#header-bar > form, nav {
+    width: 100%;
+}
+
+#product-view {
+    margin: 0px;
+}
+
+#product-view, #product-figure > img {
+    padding: 0px;
+}
+
+div > a, div p, ::placeholder, #product-details p, 
+#buttons-bar > button, #header-bar button, #product-details h4, 
+#reviews-submitted p, #submit-review > ::placeholder {
+    font-size: 15pt;
+}
+
+#product-figure > img {
+    height: auto;
+    margin: 20px;
+}
+
+#reviews-submitted > div, #product-figure > img {
+    width: 80%;
+}
+
+#product-details > h2{
+    font-size: 35pt;
+}
+
+#product-details > h3{
+    font-size: 25pt;
+}
+
+#product-details h4, p {
+    margin-bottom: 50px;
+}
+
+#buttons-bar {
+    width: 500px;
+    height: 80px;
+    margin: 50px;
+    background-color: #cb997e;
+}
+
+#reviews-submitted > div, #buttons-bar > button {
+    margin: 10px;
+}
+
+#buttons-bar > button {
+    width: 45%;
+    height: 60px;
+}
+
+#submit-review > label {
+    margin-bottom: 10px;;
+    font-size: 20pt;
+}
+
+#submit-review > textarea {
+    margin-bottom: 10px;
+    width: 50%;
+    height: 100px;
+}
+
+#submit-review > button {
+    width: 70px;
+    height: 20px;
+    text-align: center;
+}
+
+#reviews-submitted > div {
+    padding: 10px;
+    border: 0.5px solid black;
+}
+
+#reviews-submitted p {
+    font-family: 'Fira Sans Condensed', sans-serif;;
+}

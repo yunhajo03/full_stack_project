@@ -1,0 +1,167 @@
+/*
+ * Author: Yunha Jo
+ * CS 132 Spring 2023
+ * Date: June 10, 2023
+ * This is the style.css page for the index.html page for final project. 
+ */
+
+ body, h1, main, #header-bar, #header-bar > form, #product-display, 
+ #product-display div {
+     display: flex;
+ }
+ 
+ #header-bar, #header-bar > form, #product-display {
+     flex-direction: row;
+ }
+ 
+ body, main, #product-display div {
+     flex-direction: column;
+ }
+ 
+ body, h1, ul {
+     margin: 0;
+ }
+ 
+ #header-bar, ::placeholder, #product-details > h4 {
+     font-family: 'Manrope', sans-serif;
+ }
+ 
+ #banner > h1, div p, #product-details > h2 {
+     font-family: 'Fira Sans Condensed', sans-serif;
+ }
+ 
+ #product-details > h3, #banner > h2, div > a {
+     font-family: 'Wix Madefor Display', sans-serif;
+ }
+ 
+ #header-bar, #product-display, #buttons-bar {
+     justify-content: space-between;
+ }
+ 
+ #header-bar > form, #product-display, #product-display div {
+     align-items: center;
+ }
+ 
+ #header-bar > form, nav, #banner, #product-display {
+     width: 100%;
+ }
+ 
+ div > a, div p, ::placeholder, #header-bar button, .sale-tag {
+     font-size: 15pt;
+ }
+
+ div > a {
+    text-decoration: none;
+ }
+
+ #banner > h1, div > a, .sale-tag {
+    color: black;
+ }
+ 
+ #search-bar, div p {
+     margin-bottom: 10px;
+ }
+ 
+ #search-bar, main > h3 {
+     margin-left: 50px;
+ }
+ 
+ #banner, #product-display div {
+     height: 300px;
+ }
+ 
+ #buttons-bar > button, #banner {
+     background-color: #ffe8d6;
+ }
+ 
+ #banner, footer {
+     text-align: center;
+ }
+ 
+ #banner, #banner > h2 {
+     padding-bottom: 0px;
+ }
+ 
+ main > h3, #banner > h2{
+     margin-bottom: 0px;
+ }
+
+ div > a {
+    margin: 0px;
+    cursor: pointer;
+ }
+ 
+ #product-display, div > a {
+     padding: 0px;
+ }
+ 
+ #buttons-bar, #product-display div {
+     border-radius: 10px;
+ }
+
+ #banner {
+     margin-top: 40px;
+     padding-top: 50px;
+ }
+ 
+ #banner > h1 {
+     font-size: 80pt;
+     padding-left: 70px;
+ }
+ 
+ #banner > h2 {
+     font-size: 40pt;
+     color: #cb997e;
+     font-style: italic;
+ 
+ }
+
+ main, #product-display > div {
+    margin: 10px;
+ }
+ 
+ #product-display {
+     margin-bottom: 20px;
+ }
+ 
+ #product-display > div, .sale-tag {
+    padding: 5px;
+ }
+
+ #product-display > div {
+     width: 300px;
+     border: solid gray 1.5px;
+ }
+
+ #product-display {
+    flex-wrap: wrap;
+ }
+
+ #product-display > div, .prod-img {
+    position: relative;
+ }
+ 
+ main > h3 {
+     font-family: 'Merriweather', serif;
+     font-size: 30px;
+ }
+ 
+ div > img {
+    max-width: 230px; 
+    max-height: 230px;
+ }
+
+.sale-tag {
+    position: absolute;
+    background: #ffe8d6;
+    right: 10px;
+    top: 10px;
+ }
+ 
+ div p {
+     margin-top: 5px;
+ }
+ 
+ footer {
+    bottom: 10px;
+ }

@@ -1,0 +1,130 @@
+/*
+ * Author: Yunha Jo
+ * CS 132 Spring 2023
+ * Date: May 25, 2023
+ * This is the style.css page for the additem.html page for final project. 
+ */
+
+ body, h1, main, #header-bar, #header-bar > form, main > form {
+     display: flex;
+ }
+ 
+ #header-bar, #header-bar > form {
+     flex-direction: row;
+ }
+ 
+ body, main, main > form {
+     flex-direction: column;
+ }
+ 
+ body, h1, ul {
+     margin: 0;
+ }
+ 
+ #header-bar, ::placeholder {
+     font-family: 'Manrope', sans-serif;
+ }
+ 
+ #banner > h1, div p, form label {
+     font-family: 'Fira Sans Condensed', sans-serif;
+ }
+ 
+ #header-bar,  main > form {
+     justify-content: space-between;
+ }
+ 
+ #header-bar > form,  main, main > form  {
+     align-items: center;
+ }
+ 
+ #header-bar > form, nav {
+     width: 100%;
+ }
+
+ 
+ #search-bar {
+     margin-top: 10px;
+     border: solid black 1px;
+     border-radius: 5px;
+     width: 70%;
+     height: 44px;
+     padding-left: 20px;
+ }
+ 
+ #header-bar a {
+     margin-top: 15px;
+     font-size: 15pt;
+     color: #808080;
+     border: none;
+     background-color: white;
+     width: 14%;
+ }
+   
+ nav > ul {
+     padding-top: 10px;
+     list-style-type: none;
+ }
+   
+ nav > ul > li {
+     padding-left: 50px;
+     padding-right: 50px;
+     display: inline;
+ }
+ 
+ nav a {
+     color: #edede9;
+     text-decoration: none;
+ }
+ 
+ nav {
+     background-color: #6b705c;
+     height: 50px;
+ }
+
+ #header-bar a, main > h1 {
+    text-align: center;
+ }
+
+ main > h1, footer {
+    margin: 20px;
+ }
+ 
+ main > form {
+    height: 500px;
+    border: solid #cb997e 5px;
+    border-radius: 5pt;
+    padding: 10px;
+    background-color: #ffe8d6;
+ }
+
+ form > input, form > textarea,  main > form {
+    width: 50%;
+ }
+
+ form > input {
+    height: 20px;
+ }
+
+ form ::placeholder {
+    font-size: 10pt;
+ }
+
+ form > textarea {
+    height: 100px;
+ }
+
+ nav a, form label, main button {
+    font-size: 20pt;
+ }
+
+ form label, main button {
+    color: #6c584c;
+ }
+
+main button {
+    width: 30%;
+    height: 40px;
+    margin: 10px;
+}
+
+ 
