@@ -1,0 +1,55 @@
+<!--
+ * Author: Yunha Jo
+ * CS 132 Spring 2023
+ * Date: June 11, 2023
+ * Contact us page for the users to leave information or opinions about the store
+ */ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&family=Manrope&family=Merriweather&family=Wix+Madefor+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles-contact.css">
+    <script src = "js/helpers.js"></script>
+    <script src = "js/categories-bar.js"></script>
+    <script defer src="js/contact.js"></script>
+    <title>Trade Market</title>
+ </head>
+ <body>
+    <header>
+        <div id = header-bar>
+            <a href = "index.html">Home</a>
+            <form id="form"> 
+                <input type="search" id="search-bar" name="q" placeholder="Search not supported">
+                <button>Search</button>
+            </form>
+            <a href = "add-item.html">Sell Anything</a>
+            <a href = "contact-us.html">Contact Us</a>
+            <a href = "cart_view.html">Cart</a>
+        </div>
+        <nav id = "nav-category">
+        </nav>
+    </header>
+    <main>
+        <h1>Please enter the following information</h1>
+        <form id = "contact"> 
+            <label for="fname">Your name:</label>
+            <input type="text" name="name" placeholder="Please enter your name">
+            <label for="fname">Email:</label>
+            <input type="text" name="email" placeholder="Please enter your email address">
+            <label for="fname">How can we help you?</label>
+            <select name="message-category" id="message-category">
+                <option value="selling">Selling Items</option>
+                <option value="complaints">Complaints</option>
+                <option value="questions">Questions</option>
+                <option value="suggestions">Suggestions</option>
+                <option value="others">Others</option>
+            </select>
+            <label for="fname">Please enter a message to admins</label>
+            <textarea id="description" name="description" minlength = "30" placeholder="Please enter a description"></textarea>
+            <button type="button" id="contact-button">Submit Message</button>
+        </form>
+    </main>
+</body>

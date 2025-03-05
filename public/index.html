@@ -1,0 +1,71 @@
+<!--
+ * Author: Yunha Jo
+ * CS 132 Spring 2023
+ * Date: June 11, 2023
+ * This is the home page for final project, ecommerce store for selling and buying
+ * used goods
+ */ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&family=Manrope&family=Merriweather&family=Wix+Madefor+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles-index.css">
+    <script src = "js/helpers.js"></script>
+    <script src = "js/categories-bar.js"></script>
+    <script defer src="js/index.js"></script>
+    <title>Trade Market</title>
+</head>
+<body>
+    <header>
+        <div id = header-bar>
+            <a href = "index.html">Home</a>
+            <form id="form"> 
+                <input type="search" id="search-bar" name="q" placeholder="Search not supported">
+                <button>Search</button>
+            </form>
+            <a href = "add-item.html">Sell Anything</a>
+            <a href = "contact-us.html">Contact Us</a>
+            <a href = "cart_view.html">Cart</a>
+        </div>
+        <nav id ="nav-category"></nav>
+    </header>
+    <main>
+        <div id = "banner">
+            <h1>Welcome to Lightning Market!</h1>
+            <h2>where you can buy and sell items as fast as lightning!</h2>
+        </div>
+
+        <h3>Best Sellers</h3>
+        <div id = "product-display"> </div>
+    </main>
+    <footer>
+        Image sources: <a href="https://www.nordstrom.com/s/la-femme-one-shoulder-jersey-gown/5329391?origin=category-personalizedsort&breadcrumb=Home%2FBrands%2FLa%20Femme&fashioncolor=Black&color=001"> Black Dress, </a>
+        <a href="https://www.amazon.com/T-fal-Nonstick-Cookware-Thermo-Spot-Indicator/dp/B000GWG0T2"> Frying Pan, </a>
+        <a href="https://www.bodyguardz.com/apple/iphone-13-pro-max/cases/bravo-for-13-pro-max.html">iPhone case, </a> 
+        <a href="https://www.amazon.com/Sweetnight-CertiPUR-US-Certified-Isolation-Mattresses/dp/B07WQF38YF">Mattress</a>
+    </footer>
+</body>
+</html>
+
+<!-- 
+rosegold necklace: https://www.monicavinader.com/us/fine-chain-necklace-adjustable-43cm-17/rose-gold-vermeil-fine-chain-necklace-adjustable-43cm-17?set_country=US&currency=USD&noredirect=&invitation=ss2023&utm_source=google&utm_medium=cpc&utm_campaign=pmax_new_na_us&campaignid=15985350678&accountid=5679296477&gclid=CjwKCAjw4ZWkBhA4EiwAVJXwqboS_0oZ_vR2PnpA2M3GXvCdRQd6g1AXCsTlLYPvRhyjZvwsoZTHNxoClu4QAvD_BwE
+white watch: https://www.swatch.com/en-us/JUST-WHITE-SOFT-SO28W107-S14/SO28W107-S14.html?gclid=CjwKCAjw4ZWkBhA4EiwAVJXwqbjnEa8ufqaonklr_c2r_3XpEEoSEMxnHbwPhL9fvJrEGidQRxS8RxoCGeAQAvD_BwE&gclsrc=aw.ds
+heart earrings: https://www.tiffany.com/jewelry/earrings/elsa-peretti-open-heart-stud-earrings-GRP11358/elsa-peretti-open-heart-earrings-60957355/?omcid=ppc_google_TIFFANY_WJ_USA_NOBRID_FJW_MEDIUM_OGOING_EC_PEMA_GPMA_CRD_USD_N__&mkwid=%7cpcrid%7c%7cpkw%7c%7cpmt%7c%7cpdv%7cc%7cmtid%7c744dpc50313%7cslid%7c%7cproductid%7c%7ctargetids%7c%7cgroupid%7c%7c&gclid=CjwKCAjw4ZWkBhA4EiwAVJXwqXere6ICwrI5wjzQaWZmmp7SCOOgLFmnXb6ibOTp1anb2_4Z1l9D0BoCAAsQAvD_BwE&gclsrc=aw.ds
+steel bracelet: https://www.amazon.com/Richsteel-Stainless-Bracelet-Classic-Jewelry/dp/B092YHXFN6
+white blouse: https://www.nordstrom.com/s/vince-slim-silk-blouse/4779958?origin=keywordsearch-personalizedsort&breadcrumb=Home%2FAll%20Results&color=137
+skinny jeans: https://www.zara.com/us/en/zw-mid-rise-slim-fit-metallic-jeans-p06045255.html?v1=226080260&v2=2184552
+purple hoodie: https://www.adidas.com/us/all-szn-french-terry-hoodie/IC9764.html?af_channel=Search&af_click_lookback=30d&af_reengagement_window=30d&c=PLA&cm_mmc=AdieSEM_Feeds-_-GoogleProductAds-_-NA-_-IC9764&cm_mmca1=US&cm_mmca2=NA&dfw_tracker=24819-IC9764-0004&gclid=CjwKCAjw4ZWkBhA4EiwAVJXwqfpKx8m4x4IKwQNYbuzzEcWy0KLTOA9G0og4W_egMmOeWC4IxinUgRoC5gIQAvD_BwE&gclsrc=aw.ds&is_retargeting=true&kpid=IC9764&pid=googleadwords_temp&sourceid=543457011IC9764
+cardigan: https://bananarepublicfactory.gapfactory.com/browse/product.do?pid=405135121&vid=1&tid=bfpl000029&kwid=1&ap=7&gad=1&gclid=CjwKCAjw4ZWkBhA4EiwAVJXwqYLtkP5X0BLe9QSitDzizKpHrdAO2AvpsgI2KdFRD4oELbffKZcReBoCUGYQAvD_BwE&gclsrc=aw.ds#pdp-page-content
+estee lauder: https://www.amazon.com/LAUDER-Advanced-Repair-Recovery-Complex/dp/B00DZNZXJM
+nuface-facial: https://us.currentbody.com/products/nuface-mini-facial-toner?variant=39950299922529&gclid=CjwKCAjw4ZWkBhA4EiwAVJXwqRv41viL2LRGH9qnJj66NkL9uHQyU2dtB9dsGhM1qUFpmc56uN7dchoCWKUQAvD_BwE
+rare-beauty: http://www.adjustingbeauty.com/2022/03/review-rare-beauty-soft-pinch-blush.html
+makeup forever: https://www.sephora.com/product/make-up-for-ever-hd-skin-foundation-P479712?country_switch=us&lang=en&skuId=2514164&om_mmc=ppc-GG_18525669730_142914494795_pla-482775014284_2514172_626558878962_9031120_c&gclid=CjwKCAjw4ZWkBhA4EiwAVJXwqTjGEdaFuoblq7pah_LQ5Mu_NKQMnr9qX6qVURt_0ZmxJF_sD7wDWBoCo20QAvD_BwE&gclsrc=aw.ds
+hair-iron: https://www.amazon.com/Classic-Nano-Titanium-Black-Titanium-degrees/dp/B002I4Z6TG/ref=sr_1_1_sspa?crid=3CWIKJ2RU4UD5&keywords=hair+iron&qid=1686547852&s=beauty&sprefix=hair+iron%2Cbeauty%2C163&sr=1-1-spons&ufe=app_do%3Aamzn1.fos.f5122f16-c3e8-4386-bf32-63e904010ad0&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1
+rug: https://rugs.com/light-blue-5x8-havana-area-rug-6279238?gad=1&gclid=CjwKCAjw4ZWkBhA4EiwAVJXwqfS6SM5cx3NHBx1WkDL0KlcLnVfw9_NSozxIQ-98CQT7x6mSspq5ixoCESUQAvD_BwE
+cat mug: https://www.amazon.com/Enesco-6002676-Pusheen-Sculpted-Multicolor/dp/B07JBC895D/ref=asc_df_B07JBC895D/?tag=hyprod-20&linkCode=df0&hvadid=290491108961&hvpos=&hvnetw=g&hvrand=15778901472463484725&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9031120&hvtargid=pla-580327058063&psc=1
+floor lamp: https://www.amazon.com/Simple-Designs-Home-LF2000-BLK-Mother-Daughter/dp/B01MFC2O83/ref=asc_df_B01MFC2O83/?tag=hyprod-20&linkCode=df0&hvadid=168428131872&hvpos=&hvnetw=g&hvrand=9153342245869902642&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9031120&hvtargid=pla-275292415568&th=1
+ -->

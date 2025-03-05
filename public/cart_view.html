@@ -1,0 +1,40 @@
+<!--
+ * Author: Yunha Jo
+ * CS 132 Spring 2023
+ * Date: June 11, 2023
+ * A cart view for all of the items added to cart
+ */ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&family=Manrope&family=Merriweather&family=Wix+Madefor+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles-cart.css">
+    <script src = "js/helpers.js"></script>
+    <script src = "js/categories-bar.js"></script>
+    <script defer src="js/cart.js"></script>
+    <title>Trade Market</title>
+ </head>
+ <body>
+    <header>
+        <div id = header-bar>
+            <a href = "index.html">Home</a>
+            <form id="form"> 
+                <input type="search" id="search-bar" name="q" placeholder="Search not supported">
+                <button>Search</button>
+            </form>
+            <a href = "add-item.html">Sell Anything</a>
+            <a href = "contact-us.html">Contact Us</a>
+            <a href = "cart_view.html">Cart</a>
+        </div>
+        <nav id = "nav-category">
+        </nav>
+    </header>
+    <main>
+        <h1>Items added to cart:</h1>
+        <section id = "cart-items">
+        </section>
+    </main>
+</body>

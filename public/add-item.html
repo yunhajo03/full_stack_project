@@ -1,0 +1,60 @@
+<!--
+ * Author: Yunha Jo
+ * CS 132 Spring 2023
+ * Date: June 11, 2023
+ * This is an add-item page for index.html. Users can fill out the form
+ * to add new item to the store
+ */ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&family=Manrope&family=Merriweather&family=Wix+Madefor+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles-add.css">
+    <script src = "js/helpers.js"></script>
+    <script src = "js/categories-bar.js"></script>
+    <script defer src="js/add.js"></script>
+    <title>Trade Market</title>
+ </head>
+ <body>
+    <header>
+        <div id = header-bar>
+            <a href = "index.html">Home</a>
+            <form id="form"> 
+                <input type="search" id="search-bar" name="q" placeholder="Search not supported">
+                <button>Search</button>
+            </form>
+            <a href = "add-item.html">Sell Anything</a>
+            <a href = "contact-us.html">Contact Us</a>
+            <a href = "cart_view.html">Cart</a>
+        </div>
+        <nav id = "nav-category">
+        </nav>
+    </header>
+     <main>
+        <h1>Please provide information about the item you want to sell!</h1>
+        <form id = "add"> 
+            <label for="fname">Product:</label>
+            <input type="text" name="name" placeholder="Add a title">
+            <label for="fname">Price:</label>
+            <input type="text" name="price" placeholder="What is the price you want?">
+            <label for="fname">Image Link:</label>
+            <input type="text" name="imgPath" placeholder="Please provide a valid image link">
+            <label for="fname">Location:</label>
+            <input type="text" name="location" placeholder="Where is your location">
+            <label for="fname">Description:</label>
+            <textarea id="description" name="description" minlength = "50" placeholder="Please enter a description"></textarea>
+            <label for="fname">Please select a Category:</label>
+            <select name="category" id="category">
+                <option value="home-and-living">Home & Living</option>
+                <option value="clothing">Clothing</option>
+                <option value="accessories">Accessories</option>
+                <option value="beauty">Beauty</option>
+              </select>
+            <button type="button" id="add-button">Add</button>
+        </form>
+     </main>
+    </body>

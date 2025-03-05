@@ -1,0 +1,56 @@
+<!--
+ * Author: Yunha Jo
+ * CS 132 Spring 2023
+ * Date: June 11, 2023
+ * A single product view for index-html, will be populated with informaiton
+ * about the product
+ */ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&family=Manrope&family=Merriweather&family=Wix+Madefor+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles-product.css">
+    <script src = "js/helpers.js"></script>
+    <script src = "js/categories-bar.js"></script>
+    <script defer src="js/product.js"></script>
+    <title>Trade Market</title>
+</head>
+<body>
+    <header>
+        <div id = header-bar>
+            <a href = "index.html">Home</a>
+            <form id="form"> 
+                <input type="search" id="search-bar" name="q" placeholder="Search not supported">
+                <button>Search</button>
+            </form>
+            <a href = "add-item.html">Sell Anything</a>
+            <a href = "contact-us.html">Contact Us</a>
+            <a href = "cart_view.html">Cart</a>
+        </div>
+        <nav id = "nav-category">
+        </nav>
+    </header>
+    <main>
+        <div id = "product-figure"></div>
+        <section id = "product-view">
+            <div id = "product-details"></div>
+            <div id="buttons-bar">
+                <button id="cart">Add to Cart</button>
+                <button id="buy">Buy</button>
+            </div>
+            <h3 id="message-area"></h3>
+            <div id = "reviews-area">
+                <form id = "submit-review">
+                    <label for="fname">Please leave a review for the seller and/or product!</label>
+                    <textarea id="description" name="description" minlength = "20" placeholder="Please enter a description"></textarea>
+                    <button id="submit-review">Submit</button>
+                </form>
+                <div id = "reviews-submitted"> </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
